@@ -89,6 +89,23 @@
         .result strong {
             color: #333;
         }
+
+        .image-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (min-width: 768px) {
+            .image-container {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -102,6 +119,10 @@
     <button onclick="calculateTax()">Calculate Tax</button>
 
     <div class="result" id="result"></div>
+
+    <div class="image-container">
+        <img src="/api/placeholder/400/300" alt="Income Tax Calculator Image">
+    </div>
 </div>
 
 <script>
